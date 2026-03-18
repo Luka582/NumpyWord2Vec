@@ -4,7 +4,7 @@ import numpy as np
 #getting the list of words
 with open("text8") as file:
     words = file.read().split()
-words = words[:3_000_000]
+words = words[:3_000_000] # Not using the whole dataset, as it takes too long to train
 #mapping the word frequencies
 word_frequency_dict = {}
 for word in words:
